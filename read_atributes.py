@@ -1,5 +1,3 @@
- # Xpaths of elements to work with
-from grp import struct_group
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.by import By
@@ -8,11 +6,10 @@ from selenium.webdriver.chrome.options import Options
 from time import sleep 
 import json
 import re
-from sympy import EX
 
 def read_atributes(repo_url):
 
-    secs_to_wait = 1
+    secs_to_wait = 5
 
     ##github url von vue
     #github_vue_url = "https://github.com/search?l=JavaScript&q=online+shop+vue&type=Repositories" 
@@ -35,13 +32,13 @@ def read_atributes(repo_url):
     # Start the browser
     options = Options()
     # set headless option to True to run browser in headless mode
-    options.headless = True
+    # options.headless = True
 
     browser = webdriver.Chrome(options=options)
 
     # Go to the github_vue website
     browser.get(repo_url)### get url github_vue webseite
-    sleep(secs_to_wait)# mach eine Pause.## wir machen pause weil normale mensh mach pause sonst ohne Pause sie merken das ist eine Robat ist.
+    sleep(secs_to_wait*10)# mach eine Pause.## wir machen pause weil normale mensh mach pause sonst ohne Pause sie merken das ist eine Robat ist.
 
 
     #find elemet watch-folk
@@ -77,26 +74,30 @@ def read_atributes(repo_url):
     atribute_name = ['stars','watching','forks','commits','branches']
     atribute_dict={}
     text = watch_folk_text+n_commits_text+n_breanches_text
-    for atribute   in  atribute_name:
-        s=rf'(?P<n_{atribute}>\d+)\s*{atribute}'
-        X = re.search(s, text)
-        print(s)
+    try:
+        for atribute   in  atribute_name:
+            s=rf'(?P<n_{atribute}>\d+)\s*{atribute}'
+            X = re.search(s, text)
+            # print(s)
 
-        atribute_dict[atribute]= X.group(f'n_{atribute}')
+            atribute_dict[atribute]= X.group(f'n_{atribute}')
 
 
-    s = re.search(r'(?P<issues>\d+)',n_issues_text)
-    p = re.search(r'(?P<Pullrequests>\d+)',n_pullrequests_text)
-    c = re.search(r'(?P<contributors>\d+)',n_contributors_text)
+        s = re.search(r'(?P<issues>\d+)',n_issues_text)
+        p = re.search(r'(?P<Pullrequests>\d+)',n_pullrequests_text)
+        c = re.search(r'(?P<contributors>\d+)',n_contributors_text)
 
-    atribute_dict['issues'] = s.group('issues')
-    atribute_dict['pull requests'] = p.group('Pullrequests')
-    atribute_dict['contributors'] = c.group('contributors')
+        atribute_dict['issues'] = s.group('issues')
+        atribute_dict['pull requests'] = p.group('Pullrequests')
+        atribute_dict['contributors'] = c.group('contributors')
+    except Exception:
+        print('error psrniyan')
+        sleep(15)
 
     
-    browser.close()
+    # browser.close()
     return(atribute_dict)
 
-
-github_vue_url= "https://github.com/BosNaufal/vue-mini-shop" 
-print(read_atributes(github_vue_url))
+if __name__ == 'main':
+    github_vue_url= "https://github.com/BosNaufal/vue-mini-shop" 
+    print(read_atributes(github_vue_url))
