@@ -127,6 +127,13 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+# parniyan mac datei und veraibles
+.zshrc
+zhrc
+nano.save
+chromedriver
+old_code
 
 Shop/
 chromedriver.exe
+.DS_Store
