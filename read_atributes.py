@@ -8,7 +8,7 @@ from selenium.webdriver.chrome.options import Options
 from time import sleep 
 import json
 import re
-from sympy import EX
+
 
 def read_atributes(repo_url):
 

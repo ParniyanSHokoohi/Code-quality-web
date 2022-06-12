@@ -133,3 +133,6 @@ zhrc
 nano.save
 chromedriver
 old_code
+
+Shop/
+chromedriver.exe
