@@ -1,5 +1,5 @@
  # Xpaths of elements to work with
-from grp import struct_group
+#from grp import struct_group
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.by import By
