@@ -7,6 +7,7 @@ from selenium.webdriver.chrome.options import Options
 from time import sleep 
 from read_atributes import read_atributes
 import pickle
+import json
   
 secs_to_wait = 5
 options = Options()
@@ -59,31 +60,33 @@ with open('repo_urls.pkl','rb') as f:
 print(len(repo_urls))
 attrs  = {}
 
-try:
-    for i, repo_url in enumerate(repo_urls):
-        with open('attributes', 'wb') as f:
-            pickle.dump(attrs, f)
-        print(i, repo_url)
+
+for i, repo_url in enumerate(repo_urls):
+    with open('attributes', 'wb') as f:
+        pickle.dump(attrs, f)
+    with open('attributes.json', 'a') as f:
+        json.dump(attrs, f)
+    print(i, repo_url)
+    try:
+        attributes = read_atributes(repo_url)
+        print(attributes)
+    except NoSuchElementException as e:
+        sleep(5*60)
+        # Catch empty/error page
         try:
             attributes = read_atributes(repo_url)
+            attrs[repo_url]=attributes
             print(attributes)
-        except NoSuchElementException as e:
-            sleep(5*60)
-            # Catch empty/error page
-            try:
-                attributes = read_atributes(repo_url)
-                attrs[repo_url]=attributes
-                print(attributes)
 
-            except NoSuchElementException as e:
-                print('CONTINUE')
-                continue
-        
-        sleep(secs_to_wait)
+        except NoSuchElementException as e:
+            print('CONTINUE')
+            continue
+    
+    sleep(secs_to_wait)
 
     print(attributes)
-except Exception as e:
-    print(e)
+
+
 
 
 # browser.close()
