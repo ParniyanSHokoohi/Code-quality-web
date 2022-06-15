@@ -72,6 +72,9 @@ def read_atributes(repo_url):
         n_contributors_text = '1'
 
 
+        
+    browser.close()
+    print('Browser closed')
 
     atribute_name = ['stars','watching','forks','commits','branches']
     atribute_dict={}
@@ -96,8 +99,7 @@ def read_atributes(repo_url):
         print('error psrniyan')
         sleep(15)
 
-    
-    # browser.close()
+
     return(atribute_dict)
 
 if __name__ == 'main':

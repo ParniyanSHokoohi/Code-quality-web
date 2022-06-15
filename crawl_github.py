@@ -58,26 +58,32 @@ with open('repo_urls.pkl','rb') as f:
 #     pickle.dump(repo_urls, f)
 print(len(repo_urls))
 attrs  = {}
-for i, repo_url in enumerate(repo_urls):
-    print(i, repo_url)
-    try:
-        attributes = read_atributes(repo_url)
-        print(attributes)
-    except NoSuchElementException as e:
-        sleep(5*60)
-        # Catch empty/error page
+
+try:
+    for i, repo_url in enumerate(repo_urls):
+        with open('attributes', 'wb') as f:
+            pickle.dump(attrs, f)
+        print(i, repo_url)
         try:
             attributes = read_atributes(repo_url)
-            attrs[repo_url]=attributes
             print(attributes)
-
         except NoSuchElementException as e:
-            continue
-    
-    sleep(secs_to_wait)
+            sleep(5*60)
+            # Catch empty/error page
+            try:
+                attributes = read_atributes(repo_url)
+                attrs[repo_url]=attributes
+                print(attributes)
 
-with open('attributes', 'wb') as f:
-    pickle.dump(attrs, f)
+            except NoSuchElementException as e:
+                print('CONTINUE')
+                continue
+        
+        sleep(secs_to_wait)
+
+    print(attributes)
+except Exception as e:
+    print(e)
 
 
 # browser.close()
