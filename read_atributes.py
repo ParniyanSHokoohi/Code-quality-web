@@ -42,26 +42,29 @@ def read_atributes(repo_url):
     browser.get(repo_url)### get url github_vue webseite
     sleep(secs_to_wait*10)# mach eine Pause.## wir machen pause weil normale mensh mach pause sonst ohne Pause sie merken das ist eine Robat ist.
 
+    try:
+        #find elemet watch-folk
+        star_watch_folk_element = browser.find_element(By.CSS_SELECTOR, watch_fork_star_selctor)
+        watch_folk_text = star_watch_folk_element.get_attribute('textContent')
+        #print(watch_folk_text)
 
-    #find elemet watch-folk
-    star_watch_folk_element = browser.find_element(By.CSS_SELECTOR, watch_fork_star_selctor)
-    watch_folk_text = star_watch_folk_element.get_attribute('textContent')
-    #print(watch_folk_text)
+        n_commits_element = browser.find_element(By.CSS_SELECTOR,n_commits_selector)
+        n_commits_text = n_commits_element.get_attribute('textContent')
+        #print(n_commits_text)
 
-    n_commits_element = browser.find_element(By.CSS_SELECTOR,n_commits_selector)
-    n_commits_text = n_commits_element.get_attribute('textContent')
-    #print(n_commits_text)
-
-    n_issues_element = browser.find_element(By.CSS_SELECTOR,n_issues_selector)
-    n_issues_text = n_issues_element.get_attribute('textContent')
-
-
-    n_breanches_element = browser.find_element(By.CSS_SELECTOR,n_breanches_selector)
-    n_breanches_text = n_breanches_element.get_attribute('textContent')
+        n_issues_element = browser.find_element(By.CSS_SELECTOR,n_issues_selector)
+        n_issues_text = n_issues_element.get_attribute('textContent')
 
 
-    n_pullrequests_element = browser.find_element(By.CSS_SELECTOR,n_pullrequests_selector)
-    n_pullrequests_text = n_pullrequests_element.get_attribute('textContent') 
+        n_breanches_element = browser.find_element(By.CSS_SELECTOR,n_breanches_selector)
+        n_breanches_text = n_breanches_element.get_attribute('textContent')
+
+
+        n_pullrequests_element = browser.find_element(By.CSS_SELECTOR,n_pullrequests_selector)
+        n_pullrequests_text = n_pullrequests_element.get_attribute('textContent') 
+    except Exception as e:
+        print('EXCEPTION BIG TRY #########################################################')
+        browser.save_screenshot(f"{repo_url[19:].replace('/','_')}_1_screenshot.png")
 
 
     try:
@@ -73,8 +76,7 @@ def read_atributes(repo_url):
 
 
         
-    browser.close()
-    print('Browser closed')
+
 
     atribute_name = ['stars','watching','forks','commits','branches']
     atribute_dict={}
@@ -95,8 +97,15 @@ def read_atributes(repo_url):
         atribute_dict['issues'] = s.group('issues')
         atribute_dict['pull requests'] = p.group('Pullrequests')
         atribute_dict['contributors'] = c.group('contributors')
+
+
+        browser.close()
+        print('Succsess. Browser closed')
+
     except Exception:
-        print('error psrniyan')
+        print('error regex')
+        browser.save_screenshot(f"{repo_url[19:].replace('/','_')}_2_screenshot.png")
+
         sleep(15)
 
 

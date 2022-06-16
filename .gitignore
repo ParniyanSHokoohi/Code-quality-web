@@ -136,3 +136,5 @@ chromedriver
 Shop/
 chromedriver.exe
 .DS_Store
+vue-mini-shop/
+vue_repos_source
