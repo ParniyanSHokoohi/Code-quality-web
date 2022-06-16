@@ -34,7 +34,7 @@ def read_atributes(repo_url):
     # Start the browser
     options = Options()
     # set headless option to True to run browser in headless mode
-    # options.headless = True
+    options.headless = True
 
     browser = webdriver.Chrome(options=options)
 
@@ -64,7 +64,7 @@ def read_atributes(repo_url):
         n_pullrequests_text = n_pullrequests_element.get_attribute('textContent') 
     except Exception as e:
         print('EXCEPTION BIG TRY #########################################################')
-        browser.save_screenshot(f"{repo_url[19:].replace('/','_')}_1_screenshot.png")
+        # browser.savescre_enshot(f"{repo_url[19:].replace('/','_')}_1_screenshot.png")
 
 
     try:
@@ -83,28 +83,45 @@ def read_atributes(repo_url):
     text = watch_folk_text+n_commits_text+n_breanches_text
     try:
         for atribute   in  atribute_name:
-            s=rf'(?P<n_{atribute}>\d+)\s*{atribute}'
-            X = re.search(s, text)
-            # print(s)
 
-            atribute_dict[atribute]= X.group(f'n_{atribute}')
+            s=rf'(?P<n_{atribute}>\d+)\s*{atribute}'
+            
+            try:
+                X = re.search(s, text)
+                atribute_dict[atribute]= X.group(f'n_{atribute}')
+            except Exception as e:
+                print('no ', atribute)
+                print(e)
 
 
         s = re.search(r'(?P<issues>\d+)',n_issues_text)
         p = re.search(r'(?P<Pullrequests>\d+)',n_pullrequests_text)
         c = re.search(r'(?P<contributors>\d+)',n_contributors_text)
 
-        atribute_dict['issues'] = s.group('issues')
-        atribute_dict['pull requests'] = p.group('Pullrequests')
-        atribute_dict['contributors'] = c.group('contributors')
+        try:    
+            atribute_dict['issues'] = s.group('issues')
+        except Exception as e:
+                print('no issues')
+                print(e)
 
+        try:    
+           atribute_dict['pull requests'] = p.group('Pullrequests')
+        except Exception as e:
+                print('no Pullrequests')
+                print(e)
+
+        try:    
+           atribute_dict['contributors'] = c.group('contributors')
+        except Exception as e:
+                print('no contributors')
+                print(e)
 
         browser.close()
         print('Succsess. Browser closed')
 
     except Exception:
         print('error regex')
-        browser.save_screenshot(f"{repo_url[19:].replace('/','_')}_2_screenshot.png")
+        # browser.save_screenshot(f"{repo_url[19:].replace('/','_')}_2_screenshot.png")
 
         sleep(15)
 

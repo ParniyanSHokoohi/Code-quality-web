@@ -14,9 +14,9 @@ options = Options()
 # set headless option to True to run browser in headless mode
 # options.headless = True 
 # Start the browser
-browser = webdriver.Chrome(options=options)
+# browser = webdriver.Chrome(options=options)
 #github url von vue projects
-github_vue_shops_url = "https://github.com/search?l=JavaScrexit()ipt&q=online+shop+vue&type=Repositories" 
+github_vue_shops_url = "https://github.com/search?l=JavaScript&q=online+shop+vue&type=Repositories" 
 
 ## css selector of elements that we need.
 next_page_link_selector='#js-pjax-container > div > div.col-12.col-md-9.float-left.px-2.pt-3.pt-md-0.codesearch-results > div > div.paginate-container.codesearch-pagination-container > div > a.next_page'
@@ -67,20 +67,34 @@ for i, repo_url in enumerate(repo_urls):
     # with open('attributes.json', 'a') as f:
     #     json.dump(attrs, f)
     with open('attributes.txt', 'a') as f:
+        f.writelines('\n')
         f.writelines(f'{i} -- ' + repo_url)
+        f.writelines('\n')
         f.writelines(str(attrs))
+        f.writelines('\n')
         f.writelines('######################################')
+        print(str(attrs))
     print(i, repo_url)
     try:
         attributes = read_atributes(repo_url)
         print(attributes)
+        key_name = repo_url.split('/')[-2] + '_' + repo_url.split('/')[-1]
+        print(key_name)
+        attrs[key_name]=attributes
+        print(attrs[key_name])
+        print(str(attrs))
+
     except NoSuchElementException as e:
         sleep(5*60)
         # Catch empty/error page
         try:
             attributes = read_atributes(repo_url)
-            attrs[repo_url]=attributes
+            key_name = repo_url.split('/')[-2] + '_' + repo_url.split('/')[-1]
+            attrs[key_name]=attributes
             print(attributes)
+            print(attrs[key_name])
+            print(str(attrs))
+
 
         except NoSuchElementException as e:
             print('CONTINUE')
