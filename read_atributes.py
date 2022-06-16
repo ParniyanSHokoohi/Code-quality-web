@@ -64,7 +64,7 @@ def read_atributes(repo_url):
         n_pullrequests_text = n_pullrequests_element.get_attribute('textContent') 
     except Exception as e:
         print('EXCEPTION BIG TRY #########################################################')
-        browser.save_screenshot(f"{repo_url[:5]}_screenshot.png")
+        browser.save_screenshot(f"{repo_url[19:].replace('/','_')}_1_screenshot.png")
 
 
     try:
@@ -76,8 +76,7 @@ def read_atributes(repo_url):
 
 
         
-    browser.close()
-    print('Browser closed')
+
 
     atribute_name = ['stars','watching','forks','commits','branches']
     atribute_dict={}
@@ -98,9 +97,14 @@ def read_atributes(repo_url):
         atribute_dict['issues'] = s.group('issues')
         atribute_dict['pull requests'] = p.group('Pullrequests')
         atribute_dict['contributors'] = c.group('contributors')
+
+
+        browser.close()
+        print('Succsess. Browser closed')
+
     except Exception:
         print('error regex')
-        browser.save_screenshot(f"{repo_url[:5]}_2_screenshot.png")
+        browser.save_screenshot(f"{repo_url[19:].replace('/','_')}_2_screenshot.png")
 
         sleep(15)
 

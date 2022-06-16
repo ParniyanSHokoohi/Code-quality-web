@@ -62,10 +62,14 @@ attrs  = {}
 
 
 for i, repo_url in enumerate(repo_urls):
-    with open('attributes', 'wb') as f:
-        pickle.dump(attrs, f)
-    with open('attributes.json', 'a') as f:
-        json.dump(attrs, f)
+    # with open('attributes', 'wb') as f:
+    #     pickle.dump(attrs, f)
+    # with open('attributes.json', 'a') as f:
+    #     json.dump(attrs, f)
+    with open('attributes.txt', 'a') as f:
+        f.writelines(f'{i} -- ' + repo_url)
+        f.writelines(str(attrs))
+        f.writelines('######################################')
     print(i, repo_url)
     try:
         attributes = read_atributes(repo_url)
