@@ -34,12 +34,17 @@ def read_atributes(repo_url):
     # Start the browser
     options = Options()
     # set headless option to True to run browser in headless mode
-    options.headless = True
+    # options.headless = True
+
 
     browser = webdriver.Chrome(options=options)
 
+    
+
     # Go to the github_vue website
     browser.get(repo_url)### get url github_vue webseite
+    browser.set_window_size(1920, 1080)
+    browser.maximize_window()
     sleep(secs_to_wait*10)# mach eine Pause.## wir machen pause weil normale mensh mach pause sonst ohne Pause sie merken das ist eine Robat ist.
 
     try:
@@ -47,24 +52,38 @@ def read_atributes(repo_url):
         star_watch_folk_element = browser.find_element(By.CSS_SELECTOR, watch_fork_star_selctor)
         watch_folk_text = star_watch_folk_element.get_attribute('textContent')
         #print(watch_folk_text)
-
+    except Exception as e:
+        watch_folk_text=''
+        print(e)
+    
+    try:
         n_commits_element = browser.find_element(By.CSS_SELECTOR,n_commits_selector)
         n_commits_text = n_commits_element.get_attribute('textContent')
         #print(n_commits_text)
-
+    except Exception as e:
+        print(e)
+        n_commits_text=''
+    try:
         n_issues_element = browser.find_element(By.CSS_SELECTOR,n_issues_selector)
         n_issues_text = n_issues_element.get_attribute('textContent')
-
-
+    except Exception as e:
+        print(e)
+        n_issues_text=''
+    try:
         n_breanches_element = browser.find_element(By.CSS_SELECTOR,n_breanches_selector)
         n_breanches_text = n_breanches_element.get_attribute('textContent')
-
-
+    except Exception as e:
+        print(e)
+        n_breanches_text=''
+    try:
         n_pullrequests_element = browser.find_element(By.CSS_SELECTOR,n_pullrequests_selector)
         n_pullrequests_text = n_pullrequests_element.get_attribute('textContent') 
     except Exception as e:
-        print('EXCEPTION BIG TRY #########################################################')
-        # browser.savescre_enshot(f"{repo_url[19:].replace('/','_')}_1_screenshot.png")
+        print(e)
+        n_pullrequests_text=''
+    # except Exception as e:
+    #     print('EXCEPTION BIG TRY #########################################################')
+    #     # browser.savescre_enshot(f"{repo_url[19:].replace('/','_')}_1_screenshot.png")
 
 
     try:
@@ -75,15 +94,12 @@ def read_atributes(repo_url):
         n_contributors_text = '1'
 
 
-        
-
-
+    sleep(60)
     atribute_name = ['stars','watching','forks','commits','branches']
     atribute_dict={}
     text = watch_folk_text+n_commits_text+n_breanches_text
     try:
         for atribute   in  atribute_name:
-
             s=rf'(?P<n_{atribute}>\d+)\s*{atribute}'
             
             try:
@@ -92,7 +108,6 @@ def read_atributes(repo_url):
             except Exception as e:
                 print('no ', atribute)
                 print(e)
-
 
         s = re.search(r'(?P<issues>\d+)',n_issues_text)
         p = re.search(r'(?P<Pullrequests>\d+)',n_pullrequests_text)
@@ -105,13 +120,13 @@ def read_atributes(repo_url):
                 print(e)
 
         try:    
-           atribute_dict['pull requests'] = p.group('Pullrequests')
+            atribute_dict['pull requests'] = p.group('Pullrequests')
         except Exception as e:
                 print('no Pullrequests')
                 print(e)
 
         try:    
-           atribute_dict['contributors'] = c.group('contributors')
+            atribute_dict['contributors'] = c.group('contributors')
         except Exception as e:
                 print('no contributors')
                 print(e)
@@ -122,12 +137,15 @@ def read_atributes(repo_url):
     except Exception:
         print('error regex')
         # browser.save_screenshot(f"{repo_url[19:].replace('/','_')}_2_screenshot.png")
-
         sleep(15)
+        browser.close()
+        print('Failure. Browser closed')
 
+    sleep(20)
 
     return(atribute_dict)
 
 if __name__ == 'main':
-    github_vue_url= "https://github.com/BosNaufal/vue-mini-shop" 
+    github_vue_url= "https://github.com/aimeos/aimeos" 
+    # github_vue_url= "https://github.com/BosNaufal/vue-mini-shop" 
     print(read_atributes(github_vue_url))
