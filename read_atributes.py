@@ -1,5 +1,6 @@
  # Xpaths of elements to work with
 #from grp import struct_group
+from curses import flash
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.by import By
@@ -34,99 +35,101 @@ def read_atributes(repo_url):
     # Start the browser
     options = Options()
     # set headless option to True to run browser in headless mode
-    options.headless = True
+    #options.headless = True
 
     browser = webdriver.Chrome(options=options)
 
     # Go to the github_vue website
     browser.get(repo_url)### get url github_vue webseite
-    sleep(secs_to_wait*10)# mach eine Pause.## wir machen pause weil normale mensh mach pause sonst ohne Pause sie merken das ist eine Robat ist.
+    #sleep(secs_to_wait*10)# mach eine Pause.## wir machen pause weil normale mensh mach pause sonst ohne Pause sie merken das ist eine Robat ist.
+    script_to_get_watch_fork_star = f'return document.querySelector({watch_fork_star_selctor}).textContent'
+    watch_folk_text = browser.execute_script(script_to_get_watch_fork_star)
+    # try:
+    #     #find elemet watch-folk
+    #     star_watch_folk_element = browser.find_element(By.CSS_SELECTOR, watch_fork_star_selctor)
+    #     watch_folk_text = star_watch_folk_element.get_attribute('textContent')
+    #     #print(watch_folk_text)
 
-    try:
-        #find elemet watch-folk
-        star_watch_folk_element = browser.find_element(By.CSS_SELECTOR, watch_fork_star_selctor)
-        watch_folk_text = star_watch_folk_element.get_attribute('textContent')
-        #print(watch_folk_text)
+    #     n_commits_element = browser.find_element(By.CSS_SELECTOR,n_commits_selector)
+    #     n_commits_text = n_commits_element.get_attribute('textContent')
+    #     #print(n_commits_text)
 
-        n_commits_element = browser.find_element(By.CSS_SELECTOR,n_commits_selector)
-        n_commits_text = n_commits_element.get_attribute('textContent')
-        #print(n_commits_text)
-
-        n_issues_element = browser.find_element(By.CSS_SELECTOR,n_issues_selector)
-        n_issues_text = n_issues_element.get_attribute('textContent')
-
-
-        n_breanches_element = browser.find_element(By.CSS_SELECTOR,n_breanches_selector)
-        n_breanches_text = n_breanches_element.get_attribute('textContent')
+    #     n_issues_element = browser.find_element(By.CSS_SELECTOR,n_issues_selector)
+    #     n_issues_text = n_issues_element.get_attribute('textContent')
 
 
-        n_pullrequests_element = browser.find_element(By.CSS_SELECTOR,n_pullrequests_selector)
-        n_pullrequests_text = n_pullrequests_element.get_attribute('textContent') 
-    except Exception as e:
-        print('EXCEPTION BIG TRY #########################################################')
-        # browser.savescre_enshot(f"{repo_url[19:].replace('/','_')}_1_screenshot.png")
+    #     n_breanches_element = browser.find_element(By.CSS_SELECTOR,n_breanches_selector)
+    #     n_breanches_text = n_breanches_element.get_attribute('textContent')
 
 
-    try:
-        n_contributors_element = browser.find_element(By.CSS_SELECTOR,n_contributors_selector)
-        n_contributors_text = n_contributors_element.get_attribute('textContent')
-    except Exception as e:
-        print(e)
-        n_contributors_text = '1'
+    #     n_pullrequests_element = browser.find_element(By.CSS_SELECTOR,n_pullrequests_selector)
+    #     n_pullrequests_text = n_pullrequests_element.get_attribute('textContent') 
+    # except Exception as e:
+    #     print('EXCEPTION BIG TRY #########################################################')
+    #     # browser.savescre_enshot(f"{repo_url[19:].replace('/','_')}_1_screenshot.png")
+
+
+    # try:
+    #     n_contributors_element = browser.find_element(By.CSS_SELECTOR,n_contributors_selector)
+    #     n_contributors_text = n_contributors_element.get_attribute('textContent')
+    # except Exception as e:
+    #     print(e)
+    #     n_contributors_text = '1'
 
 
         
 
 
-    atribute_name = ['stars','watching','forks','commits','branches']
-    atribute_dict={}
-    text = watch_folk_text+n_commits_text+n_breanches_text
-    try:
-        for atribute   in  atribute_name:
+    # atribute_name = ['stars','watching','forks','commits','branches']
+    # atribute_dict={}
+    # text = watch_folk_text+n_commits_text+n_breanches_text
+    # try:
+    #     for atribute   in  atribute_name:
 
-            s=rf'(?P<n_{atribute}>\d+)\s*{atribute}'
+    #         s=rf'(?P<n_{atribute}>\d+)\s*{atribute}'
             
-            try:
-                X = re.search(s, text)
-                atribute_dict[atribute]= X.group(f'n_{atribute}')
-            except Exception as e:
-                print('no ', atribute)
-                print(e)
+    #         try:
+    #             X = re.search(s, text)
+    #             atribute_dict[atribute]= X.group(f'n_{atribute}')
+    #         except Exception as e:
+    #             print('no ', atribute)
+    #             print(e)
 
 
-        s = re.search(r'(?P<issues>\d+)',n_issues_text)
-        p = re.search(r'(?P<Pullrequests>\d+)',n_pullrequests_text)
-        c = re.search(r'(?P<contributors>\d+)',n_contributors_text)
+    #     s = re.search(r'(?P<issues>\d+)',n_issues_text)
+    #     p = re.search(r'(?P<Pullrequests>\d+)',n_pullrequests_text)
+    #     c = re.search(r'(?P<contributors>\d+)',n_contributors_text)
 
-        try:    
-            atribute_dict['issues'] = s.group('issues')
-        except Exception as e:
-                print('no issues')
-                print(e)
+    #     try:    
+    #         atribute_dict['issues'] = s.group('issues')
+    #     except Exception as e:
+    #             print('no issues')
+    #             print(e)
 
-        try:    
-           atribute_dict['pull requests'] = p.group('Pullrequests')
-        except Exception as e:
-                print('no Pullrequests')
-                print(e)
+    #     try:    
+    #        atribute_dict['pull requests'] = p.group('Pullrequests')
+    #     except Exception as e:
+    #             print('no Pullrequests')
+    #             print(e)
 
-        try:    
-           atribute_dict['contributors'] = c.group('contributors')
-        except Exception as e:
-                print('no contributors')
-                print(e)
+    #     try:    
+    #        atribute_dict['contributors'] = c.group('contributors')
+    #     except Exception as e:
+    #             print('no contributors')
+    #             print(e)
 
-        browser.close()
-        print('Succsess. Browser closed')
+    #     browser.close()
+    #     print('Succsess. Browser closed')
 
-    except Exception:
-        print('error regex')
-        # browser.save_screenshot(f"{repo_url[19:].replace('/','_')}_2_screenshot.png")
+    # except Exception:
+    #     print('error regex')
+    #     # browser.save_screenshot(f"{repo_url[19:].replace('/','_')}_2_screenshot.png")
 
-        sleep(15)
+    #     sleep(15)
 
 
-    return(atribute_dict)
+    return(watch_folk_text)
+    # return(atribute_dict)
 
 if __name__ == 'main':
     github_vue_url= "https://github.com/BosNaufal/vue-mini-shop" 
