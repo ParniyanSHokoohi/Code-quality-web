@@ -82,17 +82,19 @@ def read_atributes(repo_url):
     except Exception as e:
         print(e)
         n_pullrequests_text=''
+
+    try:
+        n_contributors_element = browser.find_element(By.CSS_SELECTOR,n_contributors_selector)
+        n_contributors_text = n_contributors_element.get_attribute('textContent')
+    except Exception as e:
+        print(e)
+        n_contributors_text = '1'
     # except Exception as e:
     #     print('EXCEPTION BIG TRY #########################################################')
     #     # browser.savescre_enshot(f"{repo_url[19:].replace('/','_')}_1_screenshot.png")
 
 
-    # try:
-    #     n_contributors_element = browser.find_element(By.CSS_SELECTOR,n_contributors_selector)
-    #     n_contributors_text = n_contributors_element.get_attribute('textContent')
-    # except Exception as e:
-    #     print(e)
-    #     n_contributors_text = '1'
+
 
 
     sleep(60)
@@ -103,22 +105,22 @@ def read_atributes(repo_url):
         for atribute   in  atribute_name:
             s=rf'(?P<n_{atribute}>\d+)\s*{atribute}'
             
-    #         try:
-    #             X = re.search(s, text)
-    #             atribute_dict[atribute]= X.group(f'n_{atribute}')
-    #         except Exception as e:
-    #             print('no ', atribute)
-    #             print(e)
+            try:
+                X = re.search(s, text)
+                atribute_dict[atribute]= X.group(f'n_{atribute}')
+            except Exception as e:
+                print('no ', atribute)
+                print(e)
 
         s = re.search(r'(?P<issues>\d+)',n_issues_text)
         p = re.search(r'(?P<Pullrequests>\d+)',n_pullrequests_text)
         c = re.search(r'(?P<contributors>\d+)',n_contributors_text)
 
-    #     try:    
-    #         atribute_dict['issues'] = s.group('issues')
-    #     except Exception as e:
-    #             print('no issues')
-    #             print(e)
+        try:    
+            atribute_dict['issues'] = s.group('issues')
+        except Exception as e:
+                print('no issues')
+                print(e)
 
         try:    
             atribute_dict['pull requests'] = p.group('Pullrequests')
@@ -144,8 +146,8 @@ def read_atributes(repo_url):
 
     sleep(20)
 
-    return(watch_folk_text)
-    # return(atribute_dict)
+    #return(watch_folk_text)
+    return(atribute_dict)
 
 if __name__ == 'main':
     github_vue_url= "https://github.com/aimeos/aimeos" 

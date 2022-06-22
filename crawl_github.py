@@ -27,6 +27,7 @@ repo_urls_selector = 'a.v-align-middle'
 # make a break not to be spottet as robot
 sleep(secs_to_wait)
 
+#repo_urls_react.pkl
 with open('repo_urls.pkl','rb') as f:
     repo_urls = pickle.load(f)
 
@@ -66,14 +67,7 @@ for i, repo_url in enumerate(repo_urls):
     #     pickle.dump(attrs, f)
     # with open('attributes.json', 'a') as f:
     #     json.dump(attrs, f)
-    with open('attributes.txt', 'a') as f:
-        f.writelines('\n')
-        f.writelines(f'{i} -- ' + repo_url)
-        f.writelines('\n')
-        f.writelines(str(attrs))
-        f.writelines('\n')
-        f.writelines('######################################')
-        print(str(attrs))
+    
     print(i, repo_url)
     try:
         attributes = read_atributes(repo_url)
@@ -83,7 +77,14 @@ for i, repo_url in enumerate(repo_urls):
         attrs[key_name]=attributes
         print(attrs[key_name])
         print(str(attrs))
-
+        with open('attributes.txt', 'a') as f:
+            f.writelines('\n')
+            f.writelines(f'{i} -- ' + repo_url)
+            f.writelines('\n')
+            f.writelines(str(attrs[key_name]))
+            f.writelines('\n')
+            f.writelines('######################################')
+            print(str(attrs))
     except NoSuchElementException as e:
         sleep(5*60)
         # Catch empty/error page
@@ -94,7 +95,14 @@ for i, repo_url in enumerate(repo_urls):
             print(attributes)
             print(attrs[key_name])
             print(str(attrs))
-
+            with open('attributes.txt', 'a') as f:
+                f.writelines('\n')
+                f.writelines(f'{i} -- ' + repo_url)
+                f.writelines('\n')
+                f.writelines(str(attrs))
+                f.writelines('\n')
+                f.writelines('######################################')
+                #print(str(attrs))
 
         except NoSuchElementException as e:
             print('CONTINUE')
