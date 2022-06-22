@@ -17,7 +17,8 @@ options = Options()
 # browser = webdriver.Chrome(options=options)
 #github url von vue projects
 github_vue_shops_url = "https://github.com/search?l=JavaScript&q=online+shop+vue&type=Repositories" 
-
+#github url von React projects
+github_react_shops_url = "https://github.com/search?l=JavaScript&q=online+shop+react&type=Repositories"
 ## css selector of elements that we need.
 next_page_link_selector='#js-pjax-container > div > div.col-12.col-md-9.float-left.px-2.pt-3.pt-md-0.codesearch-results > div > div.paginate-container.codesearch-pagination-container > div > a.next_page'
 repo_urls_selector = 'a.v-align-middle'
@@ -28,7 +29,7 @@ repo_urls_selector = 'a.v-align-middle'
 sleep(secs_to_wait)
 
 #repo_urls_react.pkl
-with open('repo_urls.pkl','rb') as f:
+with open('repo_urls_react.pkl','rb') as f:
     repo_urls = pickle.load(f)
 
 
@@ -77,7 +78,7 @@ for i, repo_url in enumerate(repo_urls):
         attrs[key_name]=attributes
         print(attrs[key_name])
         print(str(attrs))
-        with open('attributes.txt', 'a') as f:
+        with open('attributes_react.txt', 'a') as f:
             f.writelines('\n')
             f.writelines(f'{i} -- ' + repo_url)
             f.writelines('\n')
