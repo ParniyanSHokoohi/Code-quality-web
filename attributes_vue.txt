@@ -1,0 +1,280 @@
+
+0 -- https://github.com/BosNaufal/vue-mini-shop
+{'stars': '260', 'watching': '15', 'forks': '84', 'commits': '7', 'branches': '2', 'issues': '1', 'pull requests': '0', 'contributors': '1'}
+######################################
+1 -- https://github.com/tuture-dev/vue-online-shop-frontend
+{'stars': '182', 'watching': '4', 'forks': '53', 'commits': '75', 'branches': '15', 'issues': '0', 'pull requests': '5', 'contributors': '3'}
+######################################
+2 -- https://github.com/aimeos/aimeos
+{'watching': '27', 'forks': '177', 'commits': '234', 'branches': '10', 'issues': '3', 'pull requests': '0', 'contributors': '4'}
+######################################
+3 -- https://github.com/tuture-dev/vue-online-shop-backend
+{'stars': '56', 'watching': '2', 'forks': '26', 'commits': '19', 'branches': '2', 'issues': '0', 'pull requests': '0', 'contributors': '2'}
+######################################
+4 -- https://github.com/ananyaneogi/a-vue-shop
+{'stars': '20', 'watching': '1', 'forks': '16', 'commits': '41', 'issues': '0', 'pull requests': '1', 'contributors': '2'}
+######################################
+5 -- https://github.com/F-loat/unique
+{'stars': '7', 'watching': '2', 'forks': '5', 'commits': '58', 'branches': '4', 'issues': '0', 'pull requests': '0', 'contributors': '1'}
+######################################
+6 -- https://github.com/bedus-creation/Shopping-Sahuba
+{'stars': '19', 'watching': '1', 'forks': '9', 'commits': '186', 'branches': '4', 'issues': '8', 'pull requests': '2', 'contributors': '3'}
+######################################
+7 -- https://github.com/Stray-Kite/Online_Shopping
+{'watching': '1', 'forks': '3', 'issues': '0', 'pull requests': '0', 'contributors': '1'}
+######################################
+8 -- https://github.com/Adhiambo-Cynthia/onlineshop
+{'stars': '2', 'watching': '2', 'forks': '0', 'commits': '6', 'issues': '0', 'pull requests': '0', 'contributors': '1'}
+######################################
+9 -- https://github.com/ozoono/vue-shop
+{'stars': '2', 'watching': '0', 'forks': '0', 'commits': '10', 'issues': '0', 'pull requests': '0', 'contributors': '1'}
+######################################
+10 -- https://github.com/haohaonan103/Springboot-onlineShopping
+{'stars': '2', 'watching': '1', 'forks': '0', 'commits': '49', 'branches': '2', 'issues': '0', 'pull requests': '1', 'contributors': '1'}
+######################################
+11 -- https://github.com/HdLily/vue-shopping
+{'stars': '0', 'watching': '1', 'forks': '0', 'commits': '4', 'issues': '0', 'pull requests': '0', 'contributors': '1'}
+######################################
+12 -- https://github.com/fong06/online-shop-with-vue
+{'watching': '1', 'forks': '0', 'commits': '14', 'branches': '17', 'issues': '0', 'pull requests': '13', 'contributors': '1'}
+######################################
+13 -- https://github.com/CassielLee/vue-online-shop-backend
+{'stars': '0', 'watching': '1', 'forks': '0', 'commits': '2', 'issues': '0', 'pull requests': '0', 'contributors': '1'}
+######################################
+14 -- https://github.com/w-kuiq/vue-online-shop-frontend
+{'stars': '0', 'watching': '2', 'forks': '0', 'commits': '4', 'branches': '6', 'issues': '0', 'pull requests': '5', 'contributors': '1'}
+######################################
+15 -- https://github.com/iabhishekraj/OnlineShopping-NodeJS-ExpressJS-VueJs-MySQL
+{'stars': '0', 'watching': '1', 'forks': '0', 'issues': '0', 'pull requests': '0', 'contributors': '1'}
+######################################
+16 -- https://github.com/BrianKeybet/Vue-Online-Shopping
+{'stars': '0', 'watching': '1', 'forks': '0', 'issues': '0', 'pull requests': '0', 'contributors': '1'}
+######################################
+17 -- https://github.com/dcwik96/OnlineShop
+{'watching': '2', 'forks': '0', 'issues': '0', 'pull requests': '0', 'contributors': '1'}
+######################################
+18 -- https://github.com/programmerCYY/online_shop
+{'stars': '0', 'watching': '1', 'forks': '0', 'commits': '11', 'branches': '8', 'issues': '0', 'pull requests': '0', 'contributors': '1'}
+######################################
+19 -- https://github.com/wizard-intraining/vueTry
+{'stars': '0', 'watching': '1', 'forks': '0', 'commits': '5', 'issues': '0', 'pull requests': '0', 'contributors': '1'}
+######################################
+20 -- https://github.com/wangshiz/fuji-portal
+{'stars': '0', 'watching': '1', 'forks': '0', 'commits': '11', 'issues': '0', 'pull requests': '0', 'contributors': '1'}
+######################################
+21 -- https://github.com/vscchencc/vue-online-shop
+{'stars': '0', 'watching': '1', 'forks': '0', 'commits': '22', 'branches': '23', 'issues': '0', 'pull requests': '21', 'contributors': '2'}
+######################################
+22 -- https://github.com/pt-phone-home/vue-onlineShop
+{'stars': '0', 'watching': '1', 'forks': '0', 'commits': '5', 'branches': '16', 'issues': '0', 'pull requests': '15', 'contributors': '1'}
+######################################
+23 -- https://github.com/ultramarichka/Vue3-online-shop
+{'stars': '0', 'watching': '1', 'forks': '0', 'issues': '0', 'pull requests': '0', 'contributors': '1'}
+######################################
+24 -- https://github.com/T882200/vueshop
+{'stars': '0', 'watching': '0', 'forks': '0', 'issues': '0', 'pull requests': '0', 'contributors': '1'}
+######################################
+25 -- https://github.com/HalShaw/Online-shop
+{'stars': '0', 'watching': '2', 'forks': '0', 'commits': '4', 'branches': '4', 'issues': '0', 'pull requests': '3', 'contributors': '1'}
+######################################
+26 -- https://github.com/MoiOcanas/Vue-shop
+{'stars': '0', 'watching': '0', 'forks': '0', 'commits': '2', 'issues': '0', 'pull requests': '0', 'contributors': '1'}
+######################################
+27 -- https://github.com/aririfani/vue-shop
+{'stars': '0', 'watching': '1', 'forks': '0', 'commits': '6', 'issues': '0', 'pull requests': '0', 'contributors': '1'}
+######################################
+28 -- https://github.com/rob-digital/Vue---Online-Shop-Imitation
+{'stars': '0', 'watching': '0', 'forks': '0', 'commits': '2', 'issues': '0', 'pull requests': '0', 'contributors': '1'}
+######################################
+29 -- https://github.com/gxhao2020/vue-online-shop-frontend
+{'stars': '0', 'watching': '1', 'forks': '0', 'commits': '23', 'branches': '5', 'issues': '0', 'pull requests': '0', 'contributors': '1'}
+######################################
+30 -- https://github.com/lifechat/Vue3-PyOnlineShop
+{'stars': '0', 'watching': '0', 'forks': '0', 'commits': '12', 'issues': '0', 'pull requests': '0', 'contributors': '1'}
+######################################
+31 -- https://github.com/tanght19/eshop
+{'stars': '0', 'watching': '1', 'forks': '0', 'commits': '19', 'branches': '3', 'issues': '0', 'pull requests': '0', 'contributors': '1'}
+######################################
+32 -- https://github.com/Aucdmn/OnlineShopping
+{'stars': '0', 'watching': '2', 'forks': '0', 'commits': '4', 'issues': '0', 'pull requests': '0', 'contributors': '1'}
+######################################
+33 -- https://github.com/zzzzzjhhhh/vue-online-shop
+{'stars': '0', 'watching': '1', 'forks': '0', 'commits': '6', 'branches': '18', 'issues': '0', 'pull requests': '17', 'contributors': '1'}
+######################################
+34 -- https://github.com/chenhui996/Vue-Online-Shop
+{'watching': '1', 'forks': '0', 'commits': '6', 'branches': '22', 'issues': '0', 'pull requests': '21', 'contributors': '1'}
+######################################
+35 -- https://github.com/JunZhenSun/Vue-online-shop
+{'stars': '0', 'watching': '1', 'forks': '0', 'issues': '0', 'pull requests': '0', 'contributors': '1'}
+######################################
+36 -- https://github.com/CheneyGuo916/vue-online-shop-backend
+{'stars': '0', 'watching': '1', 'forks': '0', 'commits': '2', 'issues': '0', 'pull requests': '0', 'contributors': '1'}
+######################################
+37 -- https://github.com/liubrook/vue-online-shop
+{'stars': '0', 'watching': '1', 'forks': '0', 'commits': '33', 'branches': '2', 'issues': '0', 'pull requests': '0', 'contributors': '1'}
+######################################
+38 -- https://github.com/gxhao2020/vue-online-shop-backend
+{'stars': '0', 'watching': '1', 'forks': '0', 'commits': '3', 'issues': '0', 'pull requests': '0', 'contributors': '1'}
+######################################
+39 -- https://github.com/Arrrrray/vue-online-shop-backend
+{'stars': '0', 'watching': '2', 'forks': '0', 'commits': '2', 'branches': '3', 'issues': '0', 'pull requests': '2', 'contributors': '1'}
+######################################
+40 -- https://github.com/liutkevych/vue-online-shop
+{'stars': '0', 'watching': '0', 'forks': '0', 'commits': '9', 'issues': '0', 'pull requests': '0', 'contributors': '1'}
+######################################
+41 -- https://github.com/jay6697117/vue-online-shop-frontend
+{'stars': '0', 'watching': '1', 'forks': '0', 'issues': '0', 'pull requests': '0', 'contributors': '1'}
+######################################
+42 -- https://github.com/lljoyful/vue_shop_online
+{'stars': '0', 'watching': '1', 'forks': '0', 'issues': '0', 'pull requests': '0', 'contributors': '1'}
+######################################
+43 -- https://github.com/blackwaterstar/online_shop_vue_admin
+{'stars': '0', 'watching': '1', 'forks': '0', 'commits': '5', 'issues': '0', 'pull requests': '0', 'contributors': '1'}
+######################################
+44 -- https://github.com/Arrrrray/vue-online-shop-frontend
+{'stars': '0', 'watching': '2', 'forks': '0', 'commits': '2', 'branches': '16', 'issues': '0', 'pull requests': '14', 'contributors': '1'}
+######################################
+45 -- https://github.com/chenhui996/Vue-Online-Shop
+{'watching': '1', 'forks': '0', 'commits': '6', 'branches': '22', 'issues': '0', 'pull requests': '21', 'contributors': '1'}
+######################################
+46 -- https://github.com/zzzzzjhhhh/vue-online-shop
+{'stars': '0', 'watching': '1', 'forks': '0', 'commits': '6', 'branches': '18', 'issues': '0', 'pull requests': '17', 'contributors': '1'}
+######################################
+47 -- https://github.com/JunZhenSun/Vue-online-shop
+{'stars': '0', 'watching': '1', 'forks': '0', 'issues': '0', 'pull requests': '0', 'contributors': '1'}
+######################################
+48 -- https://github.com/DoubleWoodLin/vue-online-shop
+{'stars': '0', 'watching': '1', 'forks': '0', 'commits': '3', 'issues': '0', 'pull requests': '0', 'contributors': '1'}
+######################################
+49 -- https://github.com/haidi20/online-shop-dengan-vue
+{'stars': '0', 'watching': '1', 'forks': '0', 'commits': '7', 'issues': '0', 'pull requests': '0', 'contributors': '1'}
+######################################
+50 -- https://github.com/jay6697117/vue-online-shop-frontend
+{'stars': '0', 'watching': '1', 'forks': '0', 'issues': '0', 'pull requests': '0', 'contributors': '1'}
+######################################
+51 -- https://github.com/elysium88/vue-online-shop-backend
+{'stars': '0', 'watching': '0', 'forks': '0', 'commits': '3', 'branches': '2', 'issues': '0', 'pull requests': '1', 'contributors': '1'}
+######################################
+52 -- https://github.com/Honglin-Lu/Online_Shop_Frontend_Vue
+{'stars': '0', 'watching': '1', 'forks': '0', 'commits': '20', 'issues': '0', 'pull requests': '0', 'contributors': '1'}
+######################################
+53 -- https://github.com/liwei3380/vue-online-shop-backend
+{'stars': '0', 'watching': '1', 'forks': '0', 'commits': '4', 'issues': '0', 'pull requests': '0', 'contributors': '1'}
+######################################
+54 -- https://github.com/DoubleWoodLin/vue-online-shop
+{'stars': '0', 'watching': '1', 'forks': '0', 'commits': '3', 'issues': '0', 'pull requests': '0', 'contributors': '1'}
+######################################
+55 -- https://github.com/lljoyful/vue_shop_online
+{'stars': '0', 'watching': '1', 'forks': '0', 'issues': '0', 'pull requests': '0', 'contributors': '1'}
+######################################
+56 -- https://github.com/blackwaterstar/online_shop_vue_admin
+{'stars': '0', 'watching': '1', 'forks': '0', 'commits': '5', 'issues': '0', 'pull requests': '0', 'contributors': '1'}
+######################################
+57 -- https://github.com/ShenJet/piwubang
+{'stars': '0', 'watching': '2', 'forks': '0', 'commits': '57', 'issues': '0', 'pull requests': '0', 'contributors': '1'}
+######################################
+58 -- https://github.com/giwatest/MxShop
+{'stars': '0', 'watching': '1', 'forks': '0', 'commits': '4', 'issues': '0', 'pull requests': '0', 'contributors': '1'}
+######################################
+59 -- https://github.com/cagilan/online-product-purchase-vue
+{'stars': '0', 'watching': '2', 'forks': '0', 'commits': '8', 'branches': '2', 'issues': '0', 'pull requests': '1', 'contributors': '1'}
+######################################
+60 -- https://github.com/yeminko/online-shop
+{'stars': '0', 'watching': '2', 'forks': '0', 'commits': '3', 'issues': '0', 'pull requests': '0', 'contributors': '1'}
+######################################
+61 -- https://github.com/tomleb3/bookie
+{'stars': '0', 'watching': '1', 'forks': '0', 'commits': '21', 'branches': '2', 'issues': '0', 'pull requests': '0', 'contributors': '1'}
+######################################
+62 -- https://github.com/AnnisaRizki30/FE-VueJs-Nuxt-Online-Shopping-Web
+{'stars': '0', 'watching': '1', 'forks': '0', 'commits': '6', 'issues': '0', 'pull requests': '0', 'contributors': '1'}
+######################################
+63 -- https://github.com/siattesting/vueonlineshop
+{'stars': '0', 'watching': '1', 'forks': '0', 'commits': '4', 'branches': '21', 'issues': '0', 'pull requests': '20', 'contributors': '1'}
+######################################
+64 -- https://github.com/maheralayoubi/NodeJS-VueJS-Online-Shop
+{'watching': '1', 'forks': '0', 'commits': '22', 'issues': '0', 'pull requests': '0', 'contributors': '1'}
+######################################
+65 -- https://github.com/agampreetsingh/shoppingAppVue
+{'stars': '0', 'watching': '1', 'forks': '0', 'commits': '4', 'issues': '0', 'pull requests': '0', 'contributors': '1'}
+######################################
+66 -- https://github.com/DaliaTarek96/simple-online-shopping-using-vue
+{'stars': '0', 'watching': '1', 'forks': '0', 'commits': '3', 'issues': '0', 'pull requests': '0', 'contributors': '1'}
+######################################
+67 -- https://github.com/oliverrochester/Online-Shopping-App-Vue.js
+{'stars': '0', 'watching': '2', 'forks': '0', 'commits': '3', 'issues': '1', 'pull requests': '0', 'contributors': '1'}
+######################################
+68 -- https://github.com/miyasinarafat/vue-store
+{'stars': '0', 'watching': '1', 'forks': '0', 'commits': '4', 'issues': '0', 'pull requests': '0', 'contributors': '1'}
+######################################
+69 -- https://github.com/NasrinHaidari/Vue-fundamental
+{'stars': '0', 'watching': '2', 'forks': '0', 'commits': '2', 'issues': '0', 'pull requests': '0', 'contributors': '1'}
+######################################
+70 -- https://github.com/hetiansu5/vue-mall
+{'stars': '0', 'watching': '0', 'forks': '0', 'commits': '6', 'branches': '23', 'issues': '0', 'pull requests': '22', 'contributors': '1'}
+######################################
+71 -- https://github.com/rp88imxo/RmlOnlineShop
+{'stars': '0', 'watching': '1', 'forks': '0', 'commits': '23', 'branches': '2', 'issues': '0', 'pull requests': '0', 'contributors': '1'}
+######################################
+72 -- https://github.com/yichengyiguo/onlineShop
+{'stars': '0', 'watching': '0', 'forks': '0', 'commits': '4', 'branches': '2', 'issues': '0', 'pull requests': '0', 'contributors': '1'}
+######################################
+73 -- https://github.com/Stoneleee/online-shop
+{'stars': '0', 'watching': '1', 'forks': '0', 'commits': '20', 'branches': '14', 'issues': '1', 'pull requests': '13', 'contributors': '2'}
+######################################
+74 -- https://github.com/DaSun30/vue_shop
+{'stars': '0', 'watching': '1', 'forks': '0', 'commits': '14', 'branches': '9', 'issues': '0', 'pull requests': '0', 'contributors': '1'}
+######################################
+75 -- https://github.com/Nereitay/C.C.Online
+{'stars': '0', 'watching': '1', 'commits': '55', 'issues': '0', 'pull requests': '0', 'contributors': '1'}
+######################################
+76 -- https://github.com/jczzz/vue-express-online-shop-v1
+{'stars': '0', 'watching': '1', 'forks': '0', 'commits': '3', 'issues': '0', 'pull requests': '0', 'contributors': '1'}
+######################################
+77 -- https://github.com/janesser/build-an-online-shop-with-vue-ts
+{'watching': '2', 'forks': '0', 'commits': '3', 'issues': '0', 'pull requests': '0', 'contributors': '1'}
+######################################
+78 -- https://github.com/isbard/ScotchVueShop
+{'stars': '0', 'watching': '1', 'forks': '0', 'commits': '2', 'issues': '0', 'pull requests': '0', 'contributors': '1'}
+######################################
+79 -- https://github.com/flaredragon/Ostore
+{'stars': '0', 'watching': '1', 'forks': '0', 'commits': '6', 'issues': '0', 'pull requests': '0', 'contributors': '1'}
+######################################
+80 -- https://github.com/VladislavDeveloper/e-shop_onVue.js
+{'stars': '0', 'watching': '1', 'forks': '0', 'commits': '8', 'issues': '0', 'pull requests': '0', 'contributors': '1'}
+######################################
+81 -- https://github.com/kryukalexander/shopping-list
+{'stars': '0', 'watching': '1', 'forks': '0', 'commits': '110', 'branches': '3', 'issues': '0', 'pull requests': '0', 'contributors': '1'}
+######################################
+82 -- https://github.com/MaxKortelov/shop-page
+{'stars': '0', 'watching': '1', 'forks': '0', 'commits': '5', 'issues': '0', 'pull requests': '0', 'contributors': '1'}
+######################################
+83 -- https://github.com/VladislavDeveloper/e-shop_onVue_webpack
+{'stars': '0', 'watching': '1', 'forks': '0', 'commits': '5', 'issues': '0', 'pull requests': '0', 'contributors': '1'}
+######################################
+84 -- https://github.com/Stanislavskiy/vue_cart
+{'stars': '0', 'watching': '1', 'forks': '0', 'commits': '70', 'branches': '4', 'issues': '0', 'pull requests': '3', 'contributors': '1'}
+######################################
+85 -- https://github.com/Mistergpofficial/meeks-onlinestore-rest-api
+{'watching': '2', 'commits': '40', 'issues': '0', 'pull requests': '0', 'contributors': '1'}
+######################################
+86 -- https://github.com/YunYon-Bank/yunyon-turoturo
+{'stars': '0', 'watching': '1', 'forks': '0', 'commits': '31', 'branches': '7', 'issues': '0', 'pull requests': '0', 'contributors': '2'}
+######################################
+87 -- https://github.com/AmanAzim/E-watch-store-VueJs
+{'stars': '2', 'watching': '1', 'forks': '0', 'commits': '38', 'branches': '18', 'issues': '0', 'pull requests': '17', 'contributors': '1'}
+######################################
+88 -- https://github.com/odhiamboatieno/Laravel-Vue-JS-eCommerce-Platfom
+{'watching': '1', 'forks': '0', 'commits': '2', 'issues': '0', 'pull requests': '0', 'contributors': '1'}
+######################################
+89 -- https://github.com/atomasso/CheckoutSystem
+{'stars': '0', 'watching': '0', 'forks': '0', 'commits': '6', 'branches': '5', 'issues': '0', 'pull requests': '4', 'contributors': '1'}
+######################################
+90 -- https://github.com/atomasso/CheckoutSystem
+{'stars': '0', 'watching': '0', 'forks': '0', 'commits': '6', 'branches': '5', 'issues': '0', 'pull requests': '4', 'contributors': '1'}
+######################################
+91 -- https://github.com/matt185/store-simulator
+{'stars': '0', 'watching': '1', 'forks': '0', 'commits': '49', 'branches': '2', 'issues': '0', 'pull requests': '0', 'contributors': '1'}
+######################################
+92 -- https://github.com/RIDUMATICS/Shoppers-API
+{'stars': '0', 'watching': '0', 'forks': '0', 'commits': '14', 'issues': '0', 'pull requests': '0', 'contributors': '1'}
+######################################
