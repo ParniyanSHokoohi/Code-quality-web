@@ -139,3 +139,10 @@ chromedriver.exe
 vue-mini-shop/
 vue_repos_source
 .png
+
+# Maria
+repos*
+old
+.vscode
+chromedriver.exe
+playground.ipynb
