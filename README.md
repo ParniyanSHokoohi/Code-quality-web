@@ -1,10 +1,31 @@
 # Code-quality-web
-Find out if  there are statistically significant differences in software quality of open source repositories that implement E-commerce solutions using Vue framework versus React library
+Find out if  there are statistically significant differences in software quality of open source repositories that implement E-commerce solutions using different web frameworks.
 
-# To run the program you need to 
+## Project structure
 
-1. download chrome driver for your OS
-2. place it in code folder
-3. add path to it to PATH
+``` 
+└───collect data   # Scripts to collect information on repositories from GitHub.
+    ├───crawling   # Scripts from experimrnt #1 using web crawling.
+    ├───data   # Collected data.
+    ├───get_repos_info.py   # Search repos and collect information from GitHub API.
+    ├───merge_repos_info.py   # Merge data to one file.
+    ├───clone_repos.py   # Clone selected repos locally.
+    └───requirement.txt   # Dependences.
+```
 
-and install dependences listed in requirements.txt
+## Run 
+
+
+``` 
+python get_repos_info.py
+```
+
+Make sure to install dependences first e.g.
+
+```
+pip install -r requirements.txt
+```
+
+
+
+

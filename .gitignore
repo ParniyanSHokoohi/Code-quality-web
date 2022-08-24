@@ -127,22 +127,23 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
-# parniyan mac datei und veraibles
+
+# Parniyan local files
 .zshrc
 zhrc
 nano.save
 old_code
-chromedriver
 Shop/
-chromedriver.exe
 .DS_Store
 vue-mini-shop/
 vue_repos_source
 .png
 
-# Maria
-repos*
-old
+# IDE files
 .vscode
-chromedriver.exe
-playground.ipynb
+
+# Selenium chrome driver
+chromedriver*
+
+# Repositories source files
+repos*
