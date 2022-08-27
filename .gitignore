@@ -145,5 +145,3 @@ vue_repos_source
 # Selenium chrome driver
 chromedriver*
 
-# Repositories source files
-repos*

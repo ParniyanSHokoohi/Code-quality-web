@@ -7,17 +7,17 @@ Find out if  there are statistically significant differences in software quality
 └───collect data   # Scripts to collect information on repositories from GitHub.
     ├───crawling   # Scripts from experimrnt #1 using web crawling.
     ├───data   # Collected data.
-    ├───get_repos_info.py   # Search repos and collect information from GitHub API.
-    ├───merge_repos_info.py   # Merge data to one file.
-    ├───clone_repos.py   # Clone selected repos locally.
-    └───requirement.txt   # Dependences.
+    ├───main.py   # Search repos and collect information from GitHub API.
+    ├───ReposReader.py   # Class ReposReader that implements the functionality.
+    ├───test.py   # Unit tests.
+    ├───requirement.txt   # Dependences.
 ```
 
 ## Run 
 
 
 ``` 
-python get_repos_info.py
+python main.py
 ```
 
 Make sure to install dependences first e.g.
@@ -26,6 +26,8 @@ Make sure to install dependences first e.g.
 pip install -r requirements.txt
 ```
 
+## Run tests
 
-
-
+``` 
+python test.py
+``` 
