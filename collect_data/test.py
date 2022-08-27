@@ -1,13 +1,29 @@
+import unittest
+import helpers
 
+class TestDataCollection(unittest.TestCase):
 
-test_parameters = dict
+    tests_params = {
+        'count_pages': (
+            {'total':7, 'per_page':50},
+            1
+        ),
+        'get_description_length': (
+            {'repo':{'description':None}},
+            0
+        )
+    }
 
-build_url(framework='react', page_num=5)
+    def run_test_fun(self, fun):
+        name = fun.__name__
+        test_input, answer = self.tests_params[name]
+        output = fun(**test_input)
+        self.assertEqual(answer, output)
 
-'https://api.github.com/search/repositories?q=online+shop+react&per_page=100&page=5'
+    def test_count_pages(self):
+        self.run_test_fun(helpers.count_pages)
+    
+    def test_get_description_length(self):
+        self.run_test_fun(helpers.get_description_length)
 
-
-def count_pages(total, per_page=PER_PAGE):
-
-    7, 100
-    1
+unittest.main()
