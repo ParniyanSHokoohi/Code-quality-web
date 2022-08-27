@@ -10,7 +10,7 @@ Find out if  there are statistically significant differences in software quality
     ├───main.py   # Search repos and collect information from GitHub API.
     ├───ReposReader.py   # Class ReposReader that implements the functionality.
     ├───test.py   # Unit tests.
-    ├───requirement.txt   # Dependences.
+    └───requirement.txt   # Dependences.
 ```
 
 ## Run 
