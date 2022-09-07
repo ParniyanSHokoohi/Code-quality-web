@@ -145,3 +145,7 @@ vue_repos_source
 # Selenium chrome driver
 chromedriver*
 
+.idea
+.metadata
+.recommenders
+.settings

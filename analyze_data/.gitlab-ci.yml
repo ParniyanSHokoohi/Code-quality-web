@@ -1,0 +1,28 @@
+stages:
+  - build
+  - test
+  - deploy
+
+build:
+  stage: build
+  image: maven:3.8.2-jdk-8-openj9
+  script:
+    - mvn clean compile
+  artifacts:
+    paths:
+      - target
+
+test:
+  stage: test
+  image: maven:3.8.2-jdk-8-openj9
+  script:
+    - mvn test
+
+deploy:
+  stage: deploy
+  image: maven:3.8.2-jdk-8-openj9
+  script:
+    - mvn assembly:single
+  artifacts:
+    paths:
+      - target

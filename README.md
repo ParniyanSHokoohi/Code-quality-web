@@ -4,6 +4,7 @@ Find out if  there are statistically significant differences in software quality
 ## Project structure
 
 ``` 
+├───analyze data   # Java code to analyze the repositories with SonarQube
 └───collect data   # Scripts to collect information on repositories from GitHub.
     ├───crawling   # Scripts from experimrnt #1 using web crawling.
     ├───data   # Collected data.
@@ -12,6 +13,8 @@ Find out if  there are statistically significant differences in software quality
     ├───test.py   # Unit tests.
     └───requirement.txt   # Dependences.
 ```
+
+## Collect data
 
 ## Run 
 
