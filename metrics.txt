@@ -1,0 +1,12 @@
+
+
+
+## sofware quality metric
+
+## complexity
+
+## size
+
+## maintanability
+
+## reliability
