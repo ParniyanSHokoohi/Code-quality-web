@@ -14,9 +14,6 @@ Find out if  there are statistically significant differences in software quality
 |   ├───import/export
 |   |   ├───   #  create repository-url with metrics's column
 |   |   └───   #  import metrics from sonarqube and export to cvs-file
-|   | 
-|   | 
-|   | 
 └───collect data   # Scripts to collect information on repositories from GitHub.
     ├───crawling   # Scripts from experimrnt #1 using web crawling.
     ├───data   # Collected data.
