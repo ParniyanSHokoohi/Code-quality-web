@@ -4,7 +4,19 @@ Find out if  there are statistically significant differences in software quality
 ## Project structure
 
 ``` 
-├───analyze data   # Java code to analyze the repositories with SonarQube
+├───analyze data   # Java code to analyze the repositories with SonarQube      
+|   ├───analizer
+|   |   ├───   #  iterate all github project from the csv-file and save into collection 
+|   |   ├───   #  fork repository from source to target
+|   |   ├───   #  commit associated files
+|   |   └───   #  checks for Github workflow action to be finished
+|   |     
+|   ├───import/export
+|   |   ├───   #  create repository-url with metrics's column
+|   |   └───   #  import metrics from sonarqube and export to cvs-file
+|   | 
+|   | 
+|   | 
 └───collect data   # Scripts to collect information on repositories from GitHub.
     ├───crawling   # Scripts from experimrnt #1 using web crawling.
     ├───data   # Collected data.
